@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/header-footer.css">
+
+
+    <title>ახალი და მეორადი ნივთების ყიდვა-გაყიდვის პლატფორმა Mymarket</title>
+
+    <link rel = "icon" href = 
+    "https://www.mymarket.ge/react/build/favicon.ico?v=1" 
+        type = "image/x-icon">
+</head>
+<body>
+
+    <div class="hide-header">
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <div class="wrapper">
+            <h6>მენიუ</h6>
+            <ul class="">
+             <li><a href="#">გახსენი მაღაზია</a></li>
+             <li><a href="#">დახმარება</a></li>
+             <li><a href="#">კონტაქტი</a></li>
+             <li><a href="#">მესიჯის მიწერა</a></li>
+             <li><a href="#">ზარის მოთხოვნა</a></li>
+             <li><a href="#">შეფასება</a></li>
+             <li><a href="#">ფიშინგისგან თავდაცვა</a></li>
+             <li><a href="#">წესები და პირობები</a></li>
+            </ul>
+ 
+            <div class="language-content">
+             <li><button>ქართული</button></li>
+             <li><button>English</button></li>
+             <li><button>Русский</button></li>
+            </div>
+        </div>
+        </div>
+       
+
+
+
+      <header id="scroll-top">
+        <div class="header-top-content">
+            <div class="container">
+                <div class="row">
+                    <div class="header-top col-12 px-md-0  position-relative w-100 d-flex align-items-center justify-content-between bg-white">
+                        <div class="d-flex flex-1 align-items-center">
+                            <div class="logo-content d-flex align-items-center justify-content-between w-100 ">
+                                <a class="logo_ mr-0px mr-sm-28px d-flex align-items-center justify-content-center h-100" href="index.html">
+                                    <i class="svg-i logo-i"></i>
+                                </a>
+                                <div class="resp-none">
+                                    <form class="search-form d-flex border mr-28px border-rgba-blue-gray-30 search-block  position-relative flex-grow-1 w-60 w-md-380px " action="">
+                                        <div class="img-upload"></div>
+                                        <input class="h-100 w-100 border-0 font-size-14 font-medium pr-md-100px pr-36px" placeholder="ძებნა" type="text" name="keyword" id="" autocomplete="off">
+                                        <button class="search-icon position-absolute border-0 rounded-circle align-items-center p-0 d-flex align-items-center justify-content-center" type="submit">
+                                            <i class="svg-i search-i-mobile w-20px h-20px"></i>
+                                        </button>
+                                    </form>
+                                </div>
+
+                        
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav flex-row align-items-center ml-4px m-hidden">
+                            <button class="btn d-flex align-items-center add-statement-btn m-hidden">
+                                <i class="svg-i svg-i-sm add-statement-i mr-8px flex-shrink"></i>
+                                <span class="font-size-12 line-height-13">დამატება</span>
+                            </button>
+                            <div class="mx-8px m-hidden"></div>
+                                <div class="notification-box cursor-pointer mr-8px m-hidden">
+                                    <li class="nav-item d-flex align-items-center dropdown">
+                                        <i class="svg-i svg-i-sm message-i w-24px h-24px "></i>
+                                    </li>
+                                </div>
+                                <li class="nav-item icon d-flex position-relative mr-8px ">
+                                    <a class="favorites-a" href="">
+                                        <i class="svg-i svg-i-sm  favorites-i w-24px h-24px"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item icon cursor-pointer d-flex position-relative dropdown">
+                                    <a class="" href="">
+                                        <i class="svg-i svg-i-sm cart-i w-24px h-24px"></i>
+                                    </a>
+                                </li>
+                                <li class="btn nav-item  d-md-flex align-items-center pl-12px pr-16px border border-radius-sm ml-24px auth-btn ml-24px h-40px">
+                                    <i class="svg-i svg-i-sm auth-i mr-10px"></i>
+                                    <span class="text-dark font-size-14 bg-transparent p-0 text-decoration-none">შესვლა</span>
+                                </li>
+                            
+                        </ul>
+
+                    </div>
+
+                    <div class=" resp-none d-flex justify-content-between w-100 overflow-hidden">
+                        <div class="slider-tabs d-flex align-items-center justify-content-between header-swiper px-0 pb-16px px-16px px-md-0">
+                            <div class="swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events flex-1 swiper-backface-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide max-width-md-170px w-auto mr-32px header-swiper-hover swiper-slide-active" style="width: 69px; margin-right: 20px;">
+                                    <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px" href="">მეორადი განვადებით</a>
+                                </div>
+                                <div class="swiper-slide max-width-md-170px w-auto mr-32px header-swiper-hover swiper-slide-active" style="width: 69px; margin-right: 20px;">
+                                    <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px" href="">Trade In</a>
+                                </div>
+                                <div class="swiper-slide max-width-md-170px w-auto mr-32px header-swiper-hover swiper-slide-active" style="width: 69px; margin-right: 20px;">
+                                    <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px" href="">მაღაზიები</a>
+                                </div>
+                                <div class="swiper-slide max-width-md-170px w-auto mr-32px header-swiper-hover swiper-slide-active" style="width: 69px; margin-right: 20px;">
+                                    <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px" href="">ჩემით წავიღებ</a>
+                                </div>
+                                <div class="swiper-slide max-width-md-170px w-auto mr-32px header-swiper-hover swiper-slide-active" style="width: 69px; margin-right: 20px;">
+                                    <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px" href="">ფასის შეთავაზება</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-none d-lg-flex ">
+                            <div class="max-width-md-170px w-auto mr-32px header-swiper-hover">
+                                <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px text-nowrap" href="">
+                                    გახსენი მაღაზია
+                                </a>
+                            </div>
+                            <div class="max-width-md-170px w-auto mr-32px header-swiper-hover">
+                                <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px text-nowrap" href="">
+                                    დახმარება
+                                </a>
+                            </div>
+                            <div class="max-width-md-170px w-auto mr-32px header-swiper-hover">
+                                <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px text-nowrap" href="">
+                                    კონტაქტი
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex position-fixed z-index-999 bottom-0 left-0 right-0 bg-white px-16px shadow h-70px align-items-center justify-content-between overflow-hidden d-lg-none">
+            <a class="cursor-pointer d-flex flex-column align-items-center no-underline bottom-bar w-76px active" href="index.html">
+                <div class="w-basis-24 h-24px max-height-24px d-flex align-items-center justify-content-center mb-6px ">
+                    <i class="svg-i w-24px h-24px active-home-i d-flex"></i>
+                </div>
+                <div class="text-dark font-size-10">მთავარი</div>
+            </a>
+
+            <a class="cursor-pointer d-flex flex-column align-items-center no-underline bottom-bar w-76px" href="products.html">
+                <div class="w-basis-24 h-24px max-height-24px d-flex align-items-center justify-content-center mb-6px ">
+                    <i class="svg-i w-24px h-24px category-icon-i d-flex"></i>
+                </div>
+                <div class="text-dark font-size-10">კატეგორიები</div>
+            </a>
+
+            <a class="cursor-pointer d-flex flex-column align-items-center no-underline bottom-bar w-76px" href="index.html">
+                <div class="w-basis-24 h-24px max-height-24px d-flex align-items-center justify-content-center mb-6px ">
+                    <i class="svg-i w-24px h-24px add-icon-i d-flex"></i>
+                </div>
+                <div class="text-dark font-size-10">დამატება</div>
+            </a>
+
+            <a class="cursor-pointer d-flex flex-column align-items-center no-underline bottom-bar w-76px" href="singleProduct.html">
+                <div class="w-basis-24 h-24px max-height-24px d-flex align-items-center justify-content-center mb-6px ">
+                    <i class="svg-i w-24px h-24px cart-icon-i d-flex"></i>
+                </div>
+                <div class="text-dark font-size-10">რჩეულები</div>
+            </a>
+
+            <a class="cursor-pointer d-flex flex-column align-items-center no-underline bottom-bar w-76px" href="index.html">
+                <div class="w-basis-24 h-24px max-height-24px d-flex align-items-center justify-content-center mb-6px ">
+                    <i class="svg-i svg-i-xlg user-male-i"></i>
+                </div>
+                <div class="text-dark font-size-10">პროფილი</div>
+            </a>
+        </div>
+
+      </header>
+
+<section class="sidebar-crsl">
+    <div class="container">
+        <div class="row section-parent">
+                <div class="sidebar sidebar-more">
+                    <ul data-id="1" class="sidebar-menu">
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-person"></i></span>
+                                მომსახურება
+                                
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-shapes"></i></span>
+                                გაქირავება
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-house"></i></span>
+                                სახლი და ბაღი
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-blender"></i></span>
+                                საოჯახო ტექნიკა
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-wrench"></i></span>
+                                ტექნიკა
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-bullseye"></i></span>
+                                ნადირობა და თევზაობა
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-music"></i></span>
+                                მუსიკა
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-baby-carriage"></i></span>
+                                საბავშვო
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-shirt"></i></span>
+                                სილამაზე და მოდა
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                                მშენებლობა და რემონტი
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-motorcycle"></i></span>
+                                სოფლის მეურნეობა
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-paw"></i></span>
+                                ცხოველები
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-basketball"></i></span>
+                                სპორტი და დასვენება
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-briefcase"></i></span>
+                                ბიზნესი და დანადგარები
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-book-open"></i></span>
+                                წიგნები და კანცელარია
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+
+                        <li class="sidebar-list">
+                            <a class="sidebar-title" href="products.html">
+                                <span class="sidebar-icon"><i class="fa-solid fa-palette"></i></span>
+                                ხელოვნება და საკოლექციო
+                            </a>
+                            <span class="svg-i arr"></span>
+                        </li>
+                    </ul>
+                </div>
+
+                
+<div  class="sidebar-window">
+
+    <div data-id="1" class="sidebar-parent">
+        <div class="sidebar-header">
+            <h2><a class="bold" href="products.html">მომსახურება</a></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="single-content">
+                    <div class="a-tags">
+                        <a href="products.html" class="bold">ავტომობილის აუდიო-ვიდეო სისტემა</a>
+                        <a href="products.html" class="bold">ბუღალტერია</a>
+                        <a href="products.html" class="bold">აუდიტი</a>
+                        <a href="products.html" class="bold">ბეჭდვა, პოლიგრაფია</a>
+                        <a href="products.html" class="bold">მთარგმნელობითი</a>
+                        <a href="products.html" class="bold">სარიტუალო მომსახურება</a>
+                        <a href="products.html" class="bold">მობილური ტელეფონების სერვისი</a>
+                        <a href="products.html" class="bold">საპროექტო მომსახურება</a>
+                        <a href="products.html" class="bold">სასოფლო-სამეურნეო</a>
+                        <a href="products.html" class="bold">ავეჯის დამზადება</a>
+                        <a href="products.html" class="bold">წყალქვეშა სამუშაოები</a>
+                        <a href="products.html" class="bold">ავტომობილის აუდიო-ვიდეო სისტემა</a>
+                        <a href="products.html" class="bold">აუდიტი</a>
+                        <a href="products.html" class="bold">ჰოდროგეოლოგიური მომსახურება</a>
+                        <a href="products.html" class="bold">მობილური ტელეფონების სერვისი</a>
+                        <a href="products.html" class="bold">სარიტუალო მომსახურება</a>
+                        <a href="products.html" class="bold">საპროექტო მომსახურება</a>
+                        <a href="products.html" class="bold">სასოფლო-სამეურნეო</a>
+                        <a href="products.html" class="bold">საპროექტო მომსახურება</a>
+                        <a href="products.html" class="bold">სასოფლო-სამეურნეო</a>
+                        <a href="products.html" class="bold">ავეჯის დამზადება</a>
+                        <a href="products.html" class="bold">წყალქვეშა სამუშაოები</a>
+                        <a href="products.html" class="bold">ავტომობილის აუდიო-ვიდეო სისტემა</a>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="single-content">
+                    <div class="a-tags">
+                        <a href="products.html" class="bold">რეკლამა, მარკეტინგი, PR</a>
+                        <a href="products.html">PR საზოგადოება</a>
+                        <a href="products.html">გარე რეკლამა</a>
+                        <a href="products.html">მარკეტინგული კვლევები</a>
+                        <a href="products.html">რეკლამა ინტერნეტში</a>
+                        <a href="products.html">რეკლამა რადიოში</a>
+                        <a href="products.html" class="bold">მეტის ნახვა</a>
+                    </div>
+
+                    <div class="a-tags">
+                        <a href="products.html" class="bold">სადღესასწაულო</a>
+                        <a href="products.html">ბავშვთა გასართობი ცენტრი</a>
+                        <a href="products.html">კაფეები</a>
+                        <a href="products.html">მუსიკალური გაფორმება</a>
+                        <a href="products.html">რესტორნები, დარბაზები</a>
+                        <a href="products.html">ფეიერვერკების მოწყობა</a>
+                        <a href="products.html" class="bold">მეტის ნახვა</a>
+                    </div>
+                    <div class="a-tags">
+                        <a href="products.html" class="bold">სატრანსპორტო ლოგისტიკა</a>
+                        <a href="products.html">ევაკუატორის გამოძახება</a>
+                        <a href="products.html">მგზავრების გადაყვანა, ტაქსი</a>
+                        <a href="products.html">საკვების შეკვეთა, მიტანა</a>
+                        <a href="products.html">საკურიერო მომსახურება</a>
+                        <a href="products.html">ტვირთების გადატანა</a>
+                        <a href="products.html" class="bold">მეტის ნახვა</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="a-tags">
+                    <a href="products.html" class="bold">ცხოველთა სამყარო</a>
+                    <a href="products.html">ზოო სალონი</a>
+                    <a href="products.html">კინოლოგიური მომსახურება</a>
+                    <a href="products.html">ცხოველთა გასეირნების სერვისი</a>
+                    <a href="products.html">ცხოველთა სასტუმრო</a>
+                    <a href="products.html">ვეტერინარული მომსახურება</a>
+                    <a href="products.html" class="bold">მეტის ნახვა</a>
+                </div>
+
+                <div class="a-tags">
+                    <a href="products.html" class="bold">საყოფაცხოვრებო</a>
+                    <a href="products.html">ბინების, ოფისების დასუფთავება</a>
+                    <a href="products.html">ვიტრინების, ფასადების წმენდა</a>
+                    <a href="products.html">ტექნიკის მონტაჟი</a>
+                    <a href="products.html">ტექნიკის შეკეთება</a>
+                    <a href="products.html">ქიმიური წმენდა და რეცხვა</a>
+                    <a href="products.html" class="bold">მეტის ნახვა</a>
+                </div>
+
+                <div class="a-tags">
+                    <a href="products.html" class="bold">სამშენებლო-სარემონტო</a>
+                    <a href="products.html">მშენებლობა</a>
+                    <a href="products.html">აზომვითი ნახაზები</a>
+                    <a href="products.html">არქიტექტურა</a>
+                    <a href="products.html">ბუხრის დამზადება რესტავრაცია</a>
+                    <a href="products.html">გათბობა, კონდიცირება</a>
+                    <a href="products.html" class="bold">მეტის ნახვა</a>
+                </div>
+            </div>
+        </div>
+
+        
+        </div>
+    </div>
+         
+                <div class="carousel-area">
+                    <div class="crsl-img">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="crs-img d-block w-100" src="images/crsl-1.jpg" alt="First slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="crs-img d-block w-100" src="images/crsl-2.jpg" alt="Second slide">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="crs-img d-block w-100" src="images/crsl-3.jpg" alt="Third slide">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                    </div>
+                    
+                    <div class="below-pics">
+                        <h3>მოთხოვნადი კატეგორიები</h3>
+                        <div class="row">
+                            <div class="col-lg-3 for-resp">
+                                <div class="crsl-single-pic">
+                                    <img src="images/crs-pic-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 for-resp">
+                                <div class="crsl-single-pic">
+                                    <img src="images/crs-pic-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 for-resp">
+                                <div class="crsl-single-pic">
+                                    <img src="images/crs-pic-3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-3 for-resp">
+                                <div class="crsl-single-pic">
+                                    <img src="images/crs-pic-4.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+
+
+<section class="contin-search">
+    <div class="container">
+        <div class="cont-srch-title">
+            <h4>გააგრძელე ძიება</h4>
+            <span>
+                <a href="">
+                    ბოლო
+                </a>
+            </span>
+            <span class="dark">
+                <a href="">
+                    შენახული
+                </a>
+            </span>
+        </div>
+
+        <div class="search-cards">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-srch-card">
+                        <div class="srch-title">
+                            <h5>სარიტუალო მომსახურება</h5>
+                        </div>
+                        <button class="srch-btn">
+                            <span class="svg-i search-i"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="single-srch-card">
+                        <div class="srch-title">
+                            <h5>მომსახურება</h5>
+                        </div>
+                        <button class="srch-btn">
+                            <span class="svg-i search-i"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="single-srch-card">
+                        <div class="srch-title">
+                            <h5>მონიტორი</h5>
+                        </div>
+                        <button class="srch-btn">
+                            <span class="svg-i search-i"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="trade-in">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="trade-img">
+                        <img src="images/trade.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="trade-info">
+                        <h5>Trade in - შეცვალე ძველი ტექნიკა ახლით</h5>
+                        <p>ატვირთე შენი ძველი ტექნიკის მონაცემები, ჩააბარე და დაიბრუნე მისი ღირებულება საბანკო ანგარიშზე</p>
+                        <a href="#" class="begin">დაწყება</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="vip-cards">
+    <div class="container">
+
+        <div class="vip-card-bg">
+        <div class="vip-title">
+            <span class="s-vip">s-vip</span>
+            <h5>SUPER VIP</h5>
+            <a href="
+            " class="art-127">127 განცხადება</a>
+        </div>
+
+        <div class="vip-card-area" id="vip-card-area">
+            <div class="single-vip">
+                <img class="vip-pictures" src="images/vip-1.jpg" alt="">
+                <p><a href="">სარეცხი მანქანა</a>
+                <span>ფასი შეთანხმებით</span></p>
+            </div>
+
+            <div class="single-vip">
+                <img class="vip-pictures" src="images/vip-2.jpg" alt="">
+                <p><a href="">ავეჯის გადაზიდვა</a>
+                <span>300 ₾</span></p>
+            </div>
+
+            <div class="single-vip">
+                <img class="vip-pictures" src="images/vip-3.jpg" alt="">
+                <p><a href="">იყიდება</a>
+                <span>30 ₾</span></p>
+            </div>
+
+            <div class="single-vip">
+                <img class="vip-pictures" src="images/vip-4.jpg" alt="">
+                <p><a href="">12-9500 345-23</a>
+                <span>1234 ₾</span></p>
+            </div>
+
+            <div class="single-vip">
+                <img class="vip-pictures" src="images/vip-5.jpg" alt="">
+                <p><a href="">სამზარეულო</a>
+                <span>1 ₾</span></p>
+            </div>
+
+            <div class="single-vip">
+                <img class="vip-pictures" src="images/vip-6.jpg" alt="">
+                <p><a href="">საბავშვო</a>
+                <span>500 ₾</span></p>
+            </div>
+
+            <div class="single-vip">
+                <img class="vip-pictures" src="images/vip-7.jpg" alt="">
+                <p><a href="">ყურსასმენები</a>
+                <span>200 ₾</span></p>
+            </div>
+
+            <div class="single-vip">
+                <img class="vip-pictures" src="images/vip-8.jpg" alt="">
+                <p><a href="">ხელოვნური ღობე</a>
+                <span>50 ₾</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="trade-in">
+        <div class="row">
+
+            <div class="col-lg-6">
+                <div class="trade-info">
+                    <h5>იყიდე-გაყიდე ნივთები მარტივად და სწრაფად</h5>
+                    <p>იყიდე/გაყიდე მეორადი ან ახალი პროდუქცია განვადების შესაძლებლობით ონლაინ. ისარგებლე კურიერის მომსახურებით ან პირადად შეხვდით ერთმანეთს.</p>
+                    <a href="#" class="begin">იყიდე ახლა</a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="trade-img">
+                    <img src="images/trade-2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+
+<section class="round-pics" >
+    <div class="container">
+        <div class="row">
+            <div class="gallery" id="vip-card-area">
+                <div class="single-round">
+                    <img src="images/6-1.png" alt="">
+                    <p>ტექნიკა</p>
+                </div>
+
+                <div class="single-round">
+                    <img src="images/6-2.png" alt="">
+                    <p>მშენებლობა და რემონტი</p>
+                </div>
+
+                <div class="single-round">
+                    <img src="images/6-3.png" alt="">
+                    <p>სახლი და ბაღი</p>
+                </div>
+
+                <div class="single-round">
+                    <img src="images/6-4.png" alt="">
+                    <p>საოჯახო ტექნიკა</p>
+                </div>
+
+                <div class="single-round">
+                    <img src="images/6-5.png" alt="">
+                    <p>სილამაზე და მოდა</p>
+                </div>
+
+                <div class="single-round">
+                    <img src="images/6-6.png" alt="">
+                    <p>სპორტი და დასვენება</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="interesting">
+    <div class="container">
+        <div class="cont-srch-title">
+            <h4>შენთვის საინტერესო</h4>
+            <span>
+                <a href="">
+                    ლითონის მასალები
+                </a>
+            </span>
+            <span class="dark">
+                <a href="">
+                    ტელევიზორი
+                </a>
+            </span>
+            <span class="dark">
+                <a href="">
+                    მონიტორი
+                </a>
+            </span>
+        </div>
+
+
+        <div class="vip-card-area int-area" id="vip-card-area">
+            <div class="swiper-container2">
+                <div class="swiper-wrapper2">
+                    <div class="swiper-slide2">
+            <div class="single-vip2">
+                <img class="swipe-pics" src="images/vip-7.jpg" alt="">
+                <p><a href="">ყურსასმენები</a>
+                <span>ფასი შეთანხმებით</span></p>
+            </div>
+
+            <div class="single-vip2">
+                <img class="swipe-pics" src="images/vip-2.jpg" alt="">
+                <p><a href="">ავეჯის გადაზიდვა</a>
+                <span>300 ₾</span></p>
+            </div>
+
+            <div class="single-vip2">
+                <img class="swipe-pics" src="images/vip-4.jpg" alt="">
+                <p><a href="">12-9500 345-23</a>
+                <span>1234 ₾</span></p>
+            </div>
+
+            <div class="single-vip2">
+                <img class="swipe-pics" src="images/vip-5.jpg" alt="">
+                <p><a href="">სამზარეულო</a>
+                <span>1 ₾</span></p>
+            </div>
+
+            <div class="single-vip2">
+                <img class="swipe-pics" src="images/vip-8.jpg" alt="">
+                <p><a href="">ხელოვნური ღობე</a>
+                <span>50 ₾</span></p>
+            </div>
+        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="trade-in">
+            <div class="row">
+            
+                <div class="col-lg-6">
+                    <div class="trade-info">
+                        <h5>ონლაინ მაღაზიები</h5>
+                        <p>შეიძინე ონლაინ საშენო პროდუქცია, 300-ზე მეტი მაღაზიისგან და მიიღე სასურველ მისამართზე მთელს საქართველოში</p>
+                        <a href="#" class="begin">დაიწყე შოპინგი</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="trade-img">
+                        <img src="images/trade-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="for-you">
+    <div class="container">
+        <div class="cont-srch-title">
+            <h4>საშენო პროდუქტები</h4>
+            <span>
+                <a href="">
+                    წიგნები
+                </a>
+            </span>
+            <span class="dark">
+                <a href="">
+                    თავის მოვლის საშუალებები
+                </a>
+            </span>
+            <span class="dark">
+                <a href="">
+                    ბაღის ინსტრუმენტები
+                </a>
+            </span>
+        </div>
+
+        <div class="for-you-cards">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="book-img">
+                    <img src="images/book.jpg" alt="">
+                    <div class="book-info">
+                        <span>წიგნები</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="single-book">
+                            <img src="images/book-2.jpg" alt="">
+                            <div class="book-content">
+                                <p><a href="#">რადიარდ კიპლინგი "კიმი</a></p>
+                                <span>11.90 ₾</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-book">
+                            <img src="images/book-3.jpg" alt="">
+                            <div class="book-content">
+                                <p><a href="#">საბავშვო ლიტერატურა</a></p>
+                                <span>11.00 ₾</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-book">
+                            <img src="images/book-4.jpg" alt="">
+                            <div class="book-content">
+                                <p><a href="#">უთვისებო კაცი</a></p>
+                                <span>19.90 ₾</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-book">
+                            <div class="text-content ">
+                            <h5>მაჩვენე ყველა</h5>
+                            <a class="all" href="">470 განცხადება</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<section class="shops">
+    <div class="container">
+        <div class="vip-title">
+            <h5>მაღაზიები</h5>
+            <a href="
+            " class="art-127">586 მაღაზია</a>
+        </div>
+
+        <div class="shop-imgs" id="shop-img-area">
+            <div class="single-img">
+                <img src="images/shop-1.jpg" alt="">
+                <p>პისი პლიუსი</p>
+            </div>
+
+            <div class="single-img">
+                <img src="images/shop-2.jpg" alt="">
+                <p>WHEELER</p>
+            </div>
+
+            <div class="single-img">
+                <img src="images/shop-3.jpg" alt="">
+                <p>IT-SERVICE</p>
+            </div>
+
+            <div class="single-img">
+                <img src="images/shop-4.jpg" alt="">
+                <p>BEST STONE</p>
+            </div>
+
+            <div class="single-img">
+                <img src="images/shop-5.jpg" alt="">
+                <p>GEOLIMERI</p>
+            </div>
+
+            <div class="single-img">
+                <img src="images/shop-6.jpg" alt="">
+                <p>"ჩანთამე"</p>
+            </div>
+
+            <div class="single-img">
+                <img src="images/shop-7.jpg" alt="">
+                <p>CLICKER</p>
+            </div>
+
+            <div class="single-img">
+                <img src="images/shop-8.jpg" alt="">
+                <p>KATANA</p>
+            </div>
+
+            
+        </div>
+
+
+
+    </div>
+</section>
+
+<section class="sales-area">
+    <div class="container">
+        <div class="sales-title">
+            <h5>ფასდაკლებები</h5>
+        </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="one-sale">
+                        <div class="sale-img-area">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                    <img src="images/sale-1.jpg" alt="">
+                                    <div class="hover-info">
+                                        <div class="green-hvr">300.30 ₾</div>
+                                        <span class="white-hvr">330.00 ₾</span>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                        <img src="images/sale-2.jpg" alt="">
+                                        <div class="hover-info">
+                                            <div class="green-hvr">34.30 ₾</div>
+                                            <span class="white-hvr">330.00 ₾</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                        <img src="images/sale-3.jpg" alt="">
+                                        <div class="hover-info">
+                                            <div class="green-hvr">76.30 ₾</div>
+                                            <span class="white-hvr">330.00 ₾</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                        <img src="images/sale-4.jpg" alt="">
+                                        <div class="hover-info">
+                                            <div class="green-hvr">238.30 ₾</div>
+                                            <span class="white-hvr">330.00 ₾</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-info">
+                            <h5 class="info-title"><span class="percent">-9%</span>
+                            საოჯახო ტექნიკაზე</h5>
+                            <a href="#">17 განცხადება</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="one-sale">
+                        <div class="sale-img-area">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                    <img src="images/sale-5.jpg" alt="">
+                                    <div class="hover-info">
+                                        <div class="green-hvr">300.30 ₾</div>
+                                        <span class="white-hvr">330.00 ₾</span>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                        <img src="images/sale-6.jpg" alt="">
+                                        <div class="hover-info">
+                                            <div class="green-hvr">34.30 ₾</div>
+                                            <span class="white-hvr">330.00 ₾</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                        <img src="images/sale-7.jpg" alt="">
+                                        <div class="hover-info">
+                                            <div class="green-hvr">76.30 ₾</div>
+                                            <span class="white-hvr">330.00 ₾</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                        <img src="images/sale-8.jpg" alt="">
+                                        <div class="hover-info">
+                                            <div class="green-hvr">238.30 ₾</div>
+                                            <span class="white-hvr">330.00 ₾</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-info">
+                            <h5 class="info-title"><span class="percent">-20%</span>
+                           სმარტ საათებზე</h5>
+                            <a href="#">35 განცხადება</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="one-sale">
+                        <div class="sale-img-area">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                    <img src="images/sale-9.jpg" alt="">
+                                    <div class="hover-info">
+                                        <div class="green-hvr">300.30 ₾</div>
+                                        <span class="white-hvr">330.00 ₾</span>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                        <img src="images/sale-10.jpg" alt="">
+                                        <div class="hover-info">
+                                            <div class="green-hvr">34.30 ₾</div>
+                                            <span class="white-hvr">330.00 ₾</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                        <img src="images/sale-11.jpg" alt="">
+                                        <div class="hover-info">
+                                            <div class="green-hvr">76.30 ₾</div>
+                                            <span class="white-hvr">330.00 ₾</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="sale-img">
+                                        <img src="images/sale-12.jpg" alt="">
+                                        <div class="hover-info">
+                                            <div class="green-hvr">238.30 ₾</div>
+                                            <span class="white-hvr">330.00 ₾</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sale-info">
+                            <h5 class="info-title"><span class="percent">-30%</span>
+                            სათამაშოებზე</h5>
+                            <a href="#">7 განცხადება</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+</section>
+
+
+<section class="service resp-none">
+    <div class="container">
+        <div class="vip-title">
+            <h5>მომსახურება</h5>
+            <a href="
+            " class="art-127">3583 განცხადება</a>
+        </div>
+
+        <div class="service-area">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="images/service-1.jpg" alt="">
+                        </div>
+                        <div class="service-info">
+                            <span>სასოფლო-სამეურნეო მომსახურება</span>
+                            <a href="#"><h5>ყურძნის დაწურვა</h5></a>
+
+                            <small>0.10 ₾</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="images/service-2.jpg" alt="">
+                        </div>
+                        <div class="service-info">
+                            <span>სასოფლო-სამეურნეო მომსახურება</span>
+                            <a href="#"><h5>ყურძნის დაწურვა</h5></a>
+
+                            <small>0.10 ₾</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="images/service-3.jpg" alt="">
+                        </div>
+                        <div class="service-info">
+                            <span>ტვირთის გადატანა</span>
+                            <a href="#"><h5>ავეჯის გადაზიდვა</h5></a>
+
+                            <small>0.10 ₾</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section class="how-to-buy">
+    <div class="container">
+        <div class="buy-title">
+            <span class="svg-i buy-icon"></span>
+            <h5>როგორ ვიყიდო ონლაინ?</h5>
+        </div>
+
+        <div class="buy-process">
+            <div class="single-process">
+                <div class="process-icon">
+                    <span class="svg-i i-market"></span>
+                </div>
+                <div class="process-info">
+                    <p>დააკლიკე ღილაკს „ონლაინ ყიდვა“</p>
+                </div>
+            </div>
+
+            <div class="single-process">
+                <div class="process-icon">
+                    <span class="svg-i i-cart"></span>
+                </div>
+                <div class="process-info">
+                    <p>ნახე სასურველ კატეგორიაში საშენო პროდუქტი</p>
+                </div>
+            </div>
+
+            <div class="single-process">
+                <div class="process-icon">
+                    <span class="svg-i i-box"></span>
+                </div>
+                <div class="process-info">
+                    <p>დააჭირე ღილაკს „შეძენა“ და მიყევი ინსტრუქციას.</p>
+                </div>
+            </div>
+
+            <div class="single-process">
+                <div class="process-icon">
+                    <span class="svg-i i-home"></span>
+                </div>
+                <div class="process-info">
+                    <p>ნივთს ჩვენ მოგიტანთ სასურველ მისამართზე</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+     <a class="scrollup" href="#scroll-top"><div class="scroll-top d-flex align-items-center justify-content-center bg-market-color cursor-pointer p-15px mb-32px mb-md-40px">
+       <span class="svg-i scroll-top-i"></span>
+    </div></a>
+    <div class="cards">
+        <div class="card-area">
+            <span class="svg-i google-i"></span>
+            <span class="svg-i apple-i"></span>
+        </div>
+        <div class="card-info">
+            <p>გადმოწერე აპლიკაცია და მიიღე მუდმივად განახლებული ინფორმაცია მარტივად</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6">
+            <div class="single-footer-menu">
+                <div class="menu-title">
+                    <p>ნავიგაცია</p>
+                </div>
+                <ul class="footer-menu">
+                    <li><a href="#">განცხადების დამატება</a></li>
+                    <li><a href="#">იყიდე ონლაინ</a></li>
+                    <li><a href="#">მეორადი ნივთები</a></li>
+                    <li><a href="#">ყიდვის ფორმა საკურიეროს დახმარებით</a></li>
+                    <li><a href="#">ფიშინგისგან თავდაცვა</a></li>
+                    <li><a href="#">მაღაზიები</a></li>
+                    <li><a href="#">გახსენი მაღაზია</a></li>
+                    <li><a href="#">Trade In</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="single-footer-menu">
+                <div class="menu-title">
+                    <p>დახმარება</p>
+                </div>
+                <ul class="footer-menu">
+                    <li><a href="#">ხშირად დასმული კითხვები</a></li>
+                    <li><a href="#">კონტაქტი</a></li>
+                    <li><a href="#">მეორადი ნივთები</a></li>
+                    <li><a href="#">info@mymarket.ge</a></li>
+                </ul>
+                <ul class="social">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+            
+        </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-lg-4">
+            <div class="single-footer-menu">
+                <div class="menu-title">
+                    <p>კატეგორიები</p>
+                </div>
+                <ul class="footer-menu">
+                    <li><a href="#">მომსახურება</a></li>
+                    <li><a href="#">გაქირავება</a></li>
+                    <li><a href="#">მეორადი ნივთები</a></li>
+                    <li><a href="#">სახლი და ბაღის</a></li>
+                    <li><a href="#">საოჯახო ტექნიკა</a></li>
+                    <li><a href="#">ტექნიკა</a></li>
+                    <li><a href="#">ნადირობა და თევზაობა</a></li>
+                   
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4">
+            <div class="single-footer-menu mrg-top">
+                
+                <ul class="footer-menu">
+                    <li><a href="#">მუსიკა</a></li>
+                    <li><a href="#">საბავშვო</a></li>
+                    <li><a href="#">სილამაზე და მოდა</a></li>
+                    <li><a href="#">მშენებლობა და რემონტი</a></li>
+                    <li><a href="#">სოფლის მეუნეობა</a></li>
+                    <li><a href="#">ცხოველები</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4">
+            <div class="single-footer-menu mrg-top">
+                
+                <ul class="footer-menu">
+                    <li><a href="#">სპორტი და დასვენება</a></li>
+                    <li><a href="#">ბიზნესი და დანადგარები</a></li>
+                    <li><a href="#">წიგნები და კანცელარია</a></li>
+                    <li><a href="#">ხელოვნება და საკოლექციო</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="line">
+</div>
+
+<div class="container">
+    <div class="policy-terms">
+        <div class="single-term">
+            <a href="#">წესები და პირობები</a>
+        </div>
+
+        <div class="single-term">
+            <a href="#">კონფიდენციალობის პოლიტიკა</a>
+        </div>
+
+        <div class="single-term">
+            <a href="#">დაბრუნების პოლიტიკა</a>
+        </div>
+
+        <div class="nav-item dropdown drop-i drop-blue">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="drop-title">
+                <i class="fa-solid fa-globe"></i>
+            ქართული</span>
+            </a>
+            <div class="lang-drop dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <span class="flag">
+                    <img src="images/geo.png" alt="">
+                </span>
+                <a class="dropdown-item" href="#">ქართული</a>
+              <span class="flag">
+                <img src="images/eng.png" alt="">
+              </span>
+                <a class="dropdown-item" href="#">ინგლისური</a>
+              <span class="flag">
+                <img src="images/rus.png" alt="">
+              </span>
+              <a class="dropdown-item" href="#">რუსული</a>
+              
+            </div>
+    </div>
+    </div>
+
+    <div class="tnet-partners">
+        
+        <div class="partner-img">
+            <div class="row">
+            <div class="col-lg-2">
+            <div class="tnet-logo2">
+                <img src="images/tnet-logo.png" alt="">
+            </div>
+        </div>
+        
+                <div class="col-lg-1 col-4">
+                <span class="svg-i auto-i"></span>
+                </div>
+                <div class="col-lg-1 col-4">
+                <span class="svg-i part-i"></span>
+                </div>
+                <div class="col-lg-1 col-4">
+                <span class="svg-i home-i"></span>
+                </div>
+                <div class="col-lg-1 col-4">
+                <span class="svg-i market-i"></span>
+                </div>
+                <div class="col-lg-1 col-4">
+                <span class="svg-i super-i"></span>
+                </div>
+                <div class="col-lg-1 col-4">
+                <span class="svg-i shop-i"></span>
+                </div>
+                <div class="col-lg-1 col-4">
+                <span class="svg-i vendo-i"></span>
+                </div>
+                <div class="col-lg-1 col-4">
+                <span class="svg-i tkt-i"></span>
+                </div>
+                <div class="col-lg-1 col-4">
+                <span class="svg-i swoop-i"></span>
+                </div>
+                <div class="col-lg-1 col-4">
+                <span class="svg-i livo-i"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copy">
+        <div class="pp">
+            <p>This site is protected by reCAPTCHA and the Google
+                <a href="#">Privacy Policy</a>
+                and
+                <a href="#">Terms of service</a>
+                apply
+            </p>
+        </div>
+        <div class="rights">
+            <p>&copy; 2023 ყველა უფლება დაცულია</p>
+        </div>
+    </div>
+
+</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="javascript/mine.js"></script>
+
+</body>
+</html>

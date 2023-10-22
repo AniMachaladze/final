@@ -1,0 +1,421 @@
+.crumb-filter {
+    padding-top: 50px;
+    background-color: var(--white);
+}
+
+.crumb-nav {
+    display: flex;
+    position: relative;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.breadcrumb-item  {
+    color: var(--light-grey);
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.breadcrumb-item a {
+    color: var(--light-grey);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/breadcrumbs-icon.0e8fc01e5d18cbb6529f.svg);
+    content: '';
+    padding: 5px 4px;
+    margin: 0 5px;
+}
+
+.article-numb {
+    display: inline-block;
+    font-size: 10px;
+    color: #007aff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.select-area {
+    float: unset;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 30px;  
+}
+
+.form-control {
+    cursor: pointer;
+    font-size: 12px;
+    color: var(--grey);
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.form-control option {
+    font-size: 12px;
+    border-bottom: 10px;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 45px;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #fec900;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(243, 204, 88, 0.25);
+}
+
+.search-help {
+    padding: 50px;
+}
+
+.filter-area {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.filter-area .filter-header h5 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.filter-header {
+    padding: 10px;
+    border-bottom: 1px solid #8996ae36;
+}
+
+.content-header a {
+    color: #4a6cfa;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.content-header {
+    margin: 10px 0;
+}
+
+.filter-list {
+    padding: 0 20px;
+    color: #8996ae36;
+}
+
+.filter-list li {
+    margin-bottom: 10px;
+}
+
+.filter-list li a {
+    color: var(--dark);
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.filter-list li a:hover {
+    color: #4a6cfa;
+}
+
+.products {
+    display: flex;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.product-image {
+    position: relative;
+}
+
+.product-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.product-image .prod-vip {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 8px;
+    color: var(--white);
+    padding: 5px 7px;
+    background-color: #0ec604;
+    border-radius: 10px;
+}
+
+.person-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/user-icon-card.0289954a82ca7a2b4f2f.svg);
+    vertical-align: middle;
+    margin-right: 5px;
+
+}
+
+.product-info .person {
+    color: var(--light-grey);
+    font-size: 10px;
+}
+
+.product-info h6 a {
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 13px;
+    margin: 10px 0;
+    display: inline-block;
+    transition: .3s;
+}
+
+.product-info h6 a:hover {
+    color: #4a6cfa;
+}
+
+.product-info p {
+    color: var(--light-grey);
+    font-size: 10px;
+}
+
+.product-info {
+    border-right: 1px solid #8996ae36;
+}
+
+.price-info {
+    position: relative;
+    padding: 10px;
+}
+
+.price-info h6 {
+    text-align: right;
+    font-size: 13px;
+}
+
+.price-info .favorites {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.price-info .favorites:hover {
+    background-color: #fec900;
+}
+
+.favorites-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/favorites.ddc5f0d17826b7ad7507.svg);
+}
+
+button:focus {
+    outline: none;
+    outline: none;
+}
+
+.filter-box-2 {
+    padding: 20px;
+}
+
+.filter-box-2 .select-area {
+    position: relative;
+    padding: 0 10px;
+}
+
+
+.filter-box-2 h5 {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.radio-filter {
+    margin: 20px;
+}
+
+.radio-header h6 {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+
+.radio-input .input {
+    display: none;
+}
+
+
+.radio-input .d-flex {
+    margin: 5px;
+}
+
+.radio-input label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 13px;
+}
+
+
+.radio-input .input:checked + label::before {
+    background-color: #ffc107;
+    border-color: #ffc107; 
+}
+
+
+.radio-input label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fec900;
+    border-radius: 50%; 
+    margin-right: 5px;
+}
+
+
+.radio-input2 .input {
+    display: none;
+}
+
+
+.radio-input2 .d-flex {
+    margin: 5px;
+}
+
+.radio-input2 label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 13px;
+}
+
+
+.radio-input2 .input:checked + label::before {
+    background-color: #ffc107;
+    border-color: #ffc107; 
+}
+
+
+.radio-input2 label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fec900;
+    border-radius: 50%; 
+    margin-right: 5px;
+}
+
+.radio-input3 .input {
+    display: none;
+}
+
+
+.radio-input3 .d-flex {
+    margin: 5px;
+}
+
+.radio-input3 label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 13px;
+}
+
+
+.radio-input3 .input:checked + label::before {
+    background-color: #ffc107;
+    border-color: #ffc107; 
+}
+
+
+.radio-input3 label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fec900;
+    border-radius: 50%; 
+    margin-right: 5px;
+}
+
+
+.price-input {
+    margin: 20px;
+}
+
+.price-box input{
+    width: 80%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #8996ae36;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+.object {
+    margin: 20px;
+}
+
+.object label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--grey);
+    margin-left: 10px;
+    margin-top: 11px;
+}
+
+.check-inputs {
+    display: flex;
+}
+
+
+.page-item:first-child .page-link {
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.page-item:last-child .page-link {
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.page-link {
+    margin-left: 8px;
+    border-radius: 8px;
+    color: #fec900;
+    border: 1px solid #f1dd92;
+}
+
+.page-link:hover {
+    color: #fec900;
+    text-decoration: none;
+    background-color: #e9ecef;
+    border-color: #f1dd92;
+}
+
+.categories input[type="checkbox"] {
+    display: block;
+}

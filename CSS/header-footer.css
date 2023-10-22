@@ -1,0 +1,1433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'monsterrat';
+    src: url(../fonts/Montserrat.ttf);
+}
+
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+:root {
+    --dark : #140c2d;
+    --white : #fff;
+    --pink-grad : #FA26CA;
+    --bg-color : #f1f3f6;
+    --grey : #454b57;
+    --light-grey : #8996ae; 
+    --yell-grad : linear-gradient(76deg,#fec900,#ffd026); 
+    --faint-white : #ddd6ed; 
+}
+
+@font-face {
+    font-family: 'normal';
+    src: url(../fonts/normal.ttf);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'normal';
+}
+
+header {
+    font-family: 'monsterrat';
+}
+
+.header-top .logo-content {
+    border-radius: 32px;
+    height: 40px;
+    position: relative;
+}
+
+.flex-1 {
+    flex: 1 1;
+}
+
+.svg-i {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 14px;
+    width: 14px;
+}
+
+.svg-i.logo-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/Logo-market.bfb2d5515eb6a619f7c2.svg);
+    height: 40px;
+    width: 150px;
+}
+
+.header-top .logo-content>div:nth-child(2) {
+    width: 100%;
+}
+
+.border-rgba-blue-gray-30 {
+    border-color: rgba(137,150,174,.3)!important;
+}
+
+.border {
+    border: 1px solid #dee2e6!important;
+}
+
+div {
+    display: block;
+}
+
+.header-top .logo-content .search-form {
+    height: 40px;
+}
+
+.header-top .logo-content .search-block {
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+.img-upload {
+    border-radius: 50%;
+    height: 32px;
+    position: absolute;
+    right: 62px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 32px;
+}
+
+.img-upload:before {
+    background-color: rgba(137,150,174,.25);
+    border-radius: 2px;
+    content: "";
+    height: 24px;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 1px;
+}
+
+.img-upload:after {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/search-opload.c282b9341280a94a532c.svg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    content: "";
+    cursor: pointer;
+    height: 32px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 32px;
+    z-index: -1;
+}
+
+.img-upload:hover {
+    background-color: #f1f3f6;
+}
+
+.header-top .logo-content input {
+    border-radius: 12px;
+    font-family: TBCXBold;
+    font-size: 13px;
+    outline: none;
+    padding: 14px 16px;
+}
+
+.header-top .logo-content .search-icon {
+    background-color: transparent;
+    height: 32px;
+    right: 12px;
+    top: 50%;
+    -webkit-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+    transition: .2s ease-in-out;
+    width: 32px;
+}
+
+.header-top .logo-content .search-icon:hover {
+    background-color: #f1f3f6;
+}
+
+.svg-i.search-i-mobile {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/search-icon-mobile.667eeda4e0e278eee1b3.svg);
+    cursor: pointer;
+}
+
+.resp-block .svg-i.search-i-mobile {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-nav .add-statement-btn {
+    background-color: #fff4cc;
+    border-radius: 12px;
+    height: 40px;
+    justify-content: center;
+    line-height: 17px;
+    max-width: 130px;
+    padding: 0 24px;
+}
+
+.svg-i.svg-i-sm {
+    height: 16px;
+    width: 16px;
+}
+
+.svg-i.add-statement-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/add-statement.08bc40970e93527a7d81.svg);
+}
+
+.mr-8px, .mx-8px {
+    margin-right: 8px!important;
+}
+
+.flex-shrink {
+    flex-shrink: 0;
+}
+
+
+.ml-8px, .mx-8px {
+    margin-left: 8px!important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.notification-box .nav-item {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.notification-box .nav-item:hover {
+    background-color: #f1f3f6;
+}
+
+.navbar-nav .nav-item {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 12px;
+}
+
+.svg-i.message-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/message.52f23553e538e9c7edd8.svg);
+}
+
+.h-24px {
+    height: 24px!important;
+}
+
+.w-24px {
+    width: 24px!important;
+}
+
+.navbar-nav .nav-item a {
+    border-radius: 50%;
+    padding: 4px;
+    transition: .3s;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.svg-i.favorites-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/favorites.2b63a48b7604ad9a4b10.svg);
+}
+
+.navbar-nav .nav-item a:hover {
+    background-color: #f1f3f6;
+}
+
+.svg-i.cart-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/cart.1e94a8740770e92a2b3c.svg);
+}
+
+.h-40px {
+    height: 40px!important;
+}
+
+.border-radius-sm {
+    border-radius: 12px!important;
+}
+
+.svg-i.auth-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/auth.0af6a5be0b77202ba1ea.svg);
+}
+
+.text-dark {
+    color: #272a37!important;
+}
+
+.font-size-14 {
+    font-size: 14px!important;
+}
+
+.p-0 {
+    padding: 0!important;
+}
+
+.bg-transparent {
+    background-color: transparent!important;
+}
+
+.mr-10px, .mx-10px {
+    margin-right: 10px!important;
+}
+
+
+.overflow-hidden {
+    overflow: hidden!important;
+}
+
+.pb-16px, .py-16px {
+    padding-bottom: 16px!important;
+}
+
+.swiper-pointer-events {
+    touch-action: pan-y;
+}
+
+.swiper {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.header-swiper .swiper-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.swiper-android .swiper-slide, .swiper-wrapper {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.swiper-wrapper {
+    box-sizing: content-box;
+    display: flex;
+    height: 100%;
+    position: relative;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    width: 100%;
+    z-index: 0;
+}
+
+.swiper-backface-hidden .swiper-slide {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    width: 100%;
+}
+
+.mr-32px, .mx-32px {
+    margin-right: 32px!important;
+}
+
+.w-auto {
+    width: auto!important;
+}
+
+.position-relative {
+    position: relative!important;
+}
+
+.d-none {
+    display: none!important;
+}
+
+.header-swiper-hover a {
+    transition: .3s ease-in-out;
+}
+
+.font-size-14 {
+    font-size: 14px!important;
+}
+
+.text-decoration-none {
+    text-decoration: none!important;
+}
+
+
+.text-nowrap {
+    white-space: nowrap!important;
+}
+
+.pb-8px, .py-8px {
+    padding-bottom: 8px!important;
+}
+
+.pt-8px, .py-8px {
+    padding-top: 8px!important;
+}
+
+.header-swiper-hover a {
+    transition: .3s ease-in-out;
+    display: inline-block;
+}
+
+.mr-28px, .mx-28px {
+    margin-right: 28px!important;
+}
+
+.w-60 {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.header-top-content {
+    padding-top: 20px;
+    background-color: var(--white);
+}
+
+.pl-12px, .px-12px {
+    display: inline-block;
+    padding-left: 12px!important;
+}
+
+.resp-block {
+    display: none;
+}
+
+.position-fixed {
+    position: fixed!important;
+}
+
+.bottom-0 {
+    bottom: 0!important;
+}
+
+.right-0 {
+    right: 0!important;
+}
+
+.left-0 {
+    left: 0!important;
+}
+
+.h-70px {
+    height: 70px!important;
+}
+
+.z-index-999 {
+    z-index: 99999!important;
+}
+
+.pl-16px, .px-16px {
+    padding-left: 16px!important;
+}
+
+.pr-16px, .px-16px {
+    padding-right: 16px!important;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.bottom-bar.active {
+    position: relative;
+}
+
+.w-76px {
+    width: 76px!important;
+}
+
+.bottom-bar.active:before {
+    background-color: #f9d147;
+    border-radius: 100%;
+    bottom: -8px;
+    content: "";
+    height: 4px;
+    position: absolute;
+    width: 4px;
+}
+
+.w-basis-24 {
+    flex: 0 0 24%!important;
+    width: 24%!important;
+}
+
+.max-height-24px {
+    max-height: 24px!important;
+}
+
+.h-24px {
+    height: 24px!important;
+}
+
+.mb-6px, .my-6px {
+    margin-bottom: 6px!important;
+}
+
+.font-size-10 {
+    font-size: 10px!important;
+}
+
+.text-dark {
+    color: #272a37!important;
+}
+
+.svg-i.active-home-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/active-home-icon.1c0b4a85b82e0cc3e1d0.svg);
+}
+
+.svg-i.category-icon-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/category-icon.84b61d426e6849a336c5.svg);
+}
+
+.svg-i.add-icon-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/add-icon.a1fe437a0ad7b59d68cf.svg);
+}
+
+.svg-i.cart-icon-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/cart-icon.2cced7a04f0eb484a407.svg);
+}
+
+.svg-i.svg-i-xlg {
+    height: 40px;
+    width: 40px;
+}
+
+.svg-i.user-male-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/user-male.b9c3480efd72f3ab76d9.svg);
+}
+
+
+
+
+
+
+.wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--white);
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+}
+.menu-btn{
+  position: fixed;
+  z-index: 2;
+  right: 20px;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--dark);
+  cursor: pointer;
+  background: var(--yell-grad);
+  transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .menu-btn{
+  background: #fff;
+  color: #4158d0;
+}
+#active:checked ~ .menu-btn i:before{
+  content: "\f00d";
+}
+
+.wrapper ul li a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.wrapper ul li {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.wrapper ul {
+    padding: 20px;
+    list-style: none;
+    border-bottom: 1px solid #00000033;
+    width: 40%;
+}
+
+.wrapper h6 {
+    padding: 20px;
+    font-size: 20px;
+    color: var(--light-grey);
+}
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.language-content {
+    padding: 20px;
+}
+
+.language-content li {
+    display: inline-block;
+}
+
+.language-content li button {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: var(--white);
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.language-content li button:hover {
+    background-color: #68656537;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+.d-lg-flex {
+    display: flex!important;
+    }
+}
+
+.hide-header {
+    display: none;
+}
+
+.resp-none  {
+    margin-top: 10px;
+}
+
+
+
+
+
+.scroll-top {
+    background-color: #fec900;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.scroll-top {
+    transition: .3s ease-in-out;
+}
+
+.scroll-top:hover {
+    background-color: #fec900;
+}
+
+.svg-i.scroll-top-i {
+    background-image: url(https://mymarket.ge/react/build/static/media/scr-top.6c3f4fbdc1a9dd01f4e0.svg);
+}
+
+footer {
+    background-color: var(--white);
+}
+
+.cards {
+    display: flex;
+    padding: 30px 70px;
+    border-bottom: 1px solid #8996ae30;
+    margin-bottom: 50px;
+}
+
+.card-area {
+    display: flex;
+}
+
+.google-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/google-play.54759d299cfc21faf55e.svg);
+    height: 28px;
+    width: 93px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.apple-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/app-store.bdd8ef2bdc121a6c22eb.svg);
+    height: 28px;
+    width: 93px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.card-info p {
+    width: 55%;
+    font-size: 10px;
+    color: var(--light-grey);
+}
+
+.footer-bar {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.single-footer-menu .menu-title {
+    font-size: 13px;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.single-footer-menu ul {
+    list-style: none;
+}
+
+.single-footer-menu ul li {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.single-footer-menu ul li a {
+    color: var(--light-grey);
+    text-decoration: none;
+    font-size: 10px;
+    transition: .5s;
+}
+
+.single-footer-menu ul li a:hover {
+    color: var(--dark);
+}
+
+.single-footer-menu .social li {
+    display: inline-block;   
+    border-radius: 50%;
+    background-color: #f1f3f6;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.single-footer-menu .social li:hover {
+    background-color: #8996ae;
+}
+
+.single-footer-menu .social li a {
+    color: #272a37;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+}
+
+.mrg-top {
+    margin-top: 60px;
+}
+
+.line {
+    border-bottom: 1px solid #8996ae30;
+    padding: 30px 0;
+}
+
+.policy-terms {
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+
+}
+
+.single-term a {
+    color: var(--light-grey);
+    font-size: 10px;
+    text-decoration: underline;
+    margin-right: 20px;
+    transition: .5s;
+}
+
+.single-term a:hover {
+    color: var(--dark);
+}
+
+
+.drop-blue .drop-title {
+    font-size: 14px;
+    color: #4a6cfa;
+    border: 1px solid #007aff;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.flag img {
+    display: inline-block;
+    width: 23px;
+    margin-bottom: 10px;
+}
+
+.lang-drop .dropdown-item {
+    display: inline-block;
+    width: 75%;
+}
+
+.drop-blue .dropdown-menu {
+    border-radius: 10px;
+    border-color: #4a6cfa;
+    color: var(--light-grey);
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.partner-img {
+    border: 1px solid #8996ae36;
+    border-radius: 40px;
+    padding: 0 10px;
+}
+
+.tnet-logo2 img {
+    width: 150px;
+    border-radius: 40px;
+    cursor: pointer;
+   
+}
+
+.partner-img span {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.auto-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/auto.9ad7274a94cd0e26239de051b2fa166d.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.part-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/parts.2298ef12c4e3e35d2f38ea2e28977b68.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.home-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/home.690059415edc6e3717b901e82a5afcf2.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.market-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/market.3fb1fdedb13903c83881a755f1ec7750.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.super-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/supaerapp.a91bd855302ef674f2ca4b22463156bc.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.shop-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/myshop.2ad1f54c791f0d7da12d13a8f5235519.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.vendo-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/vendoo.aab4a9806dc83f949956544507d4847e.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.tkt-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/tkt.fb3efa063ed1256d05b00928bfc18caf.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.swoop-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/swoop.51ded7a43fa9805c8901dffbf6b5306a.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.livo-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/livo.82ffe818546639a8c97b86ac9bed2935.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pp p {
+    font-size: 9px;
+    color: var(--grey);
+}
+
+.pp a {
+    font-size: 9px;
+    color: var(--grey);
+    text-decoration: underline;
+}
+
+.rights p {
+    font-size: 9px;
+    color: var(--grey);
+}
+
+
+.wrapper::-webkit-scrollbar {
+    width: 3px;
+}
+
+.wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+    background: #bebbbb; 
+    border-radius: 20px
+}
+
+.wrapper::-webkit-scrollbar-thumb:hover {
+    background: #adadad; 
+}
+
+.mrg-top {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .carousel-area {
+        width: 100%;
+        padding: 20px; 
+    }
+
+    .carousel {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .crsl-img {
+        position: relative;
+    }
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+    .carousel-item {
+        text-align: center;
+    }
+
+    .crs-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%; 
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-image: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .resp-block {
+        display: block;
+    }
+
+    .resp-none {
+        display: none;
+    }
+
+    .header-top ul.navbar-nav {
+        display: none;
+    }
+
+    .svg-icon img {
+        display: none;
+    }
+
+    .max-width-md-170px {
+        max-width: 170px!important;
+    }
+
+    .w-md-380px {
+        width: 380px!important;
+    }
+
+    .pr-md-0, .px-md-0 {
+        padding-right: 0!important;
+    }
+
+    .pl-md-0, .px-md-0 {
+        padding-left: 0!important;
+    }
+
+
+    .hide-header {
+        display: block;
+      }
+
+      .carousel-area {
+        margin-left: 0;
+        width: 100%;
+      }
+
+      .below-pics .row {
+        flex-wrap: nowrap;
+      }
+
+      .carousel-control-prev {
+        display: none;
+      }
+
+      .carousel-control-next {
+        display: none;
+      }
+
+      .below-pics {
+        background-color: var(--white);
+        margin-top: 20px;
+        padding: 0;
+      }
+
+      .trade-info .begin {
+        width: 100%;
+        text-align: center;
+      }
+
+      .trade-img {
+        margin-top: 10px;
+      }
+
+      .cards {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .card-area {
+        margin-bottom: 15px;
+    }
+
+    .buy-process {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sale-info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sale-info .info-title {
+        font-weight: 600;
+    }
+
+    .mrg-top {
+        margin-top: 20px;
+    }
+
+    .policy-terms {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .drop-blue {
+    margin: 10px 0;
+    padding: 10px 0;
+    }
+
+    .drop-blue .nav-link {
+        padding: 0;
+    }
+
+    footer {
+        padding-bottom: 100px;
+    }
+
+    .copy {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    .lang-drop {
+        position: absolute;
+        top: 10px!important;
+    }
+
+    .book-img img {
+        margin-bottom: 10px;
+        height: 230px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .for-resp {
+        flex: 0 0 25%; 
+        max-width: 25%;
+        padding: 2px; 
+        box-sizing: border-box;
+ 
+    }
+
+    .language-content {
+        padding-top: 20px;
+        margin-bottom: 126px;
+    }
+
+    .language-content li {
+        display: block;
+    }
+
+    .language-content li button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .wrapper {
+        overflow-y: scroll ;
+        
+    }
+
+    .wrapper ul {
+        width: 100%;
+    }
+
+    .single-srch-card {
+        margin-bottom: 12px;
+    }
+
+    .cont-srch-title a {
+        margin-bottom: 7px;
+    }
+
+    .filter-area {
+        display: none;
+    }
+
+    .products {
+        flex-direction: column;
+    }
+    
+    .product-image {
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    .search-help {
+        padding: 50px 0;
+    }
+    
+    .product-image img {
+        width: 260px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-right: 0;
+        box-shadow: 0px 1px 20px 20px #e1730247;
+    }
+
+    .product-image {
+        margin-bottom: 20px;
+    }
+
+    .pagination {
+        overflow: hidden;
+    }
+
+    .filter-box {
+        display: none;
+    }
+
+    .product-info {
+        border: none;
+    }
+
+    .price-info h6 {
+        text-align: left;
+        font-size: 13px;
+    }
+
+    .price-info .favorites {
+        position: absolute;
+        bottom: 15px;
+        right: -6px;
+    }
+
+    .mrg-top {
+        margin-top: 60px;
+    }
+
+      
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+
+    .mrg-top {
+        margin-top: 60px;
+    }
+
+    .filter-area {
+        display: none;
+    }
+
+
+    .cont-srch-title a {
+        margin-bottom: 7px;
+    }
+
+    .single-srch-card {
+        margin-bottom: 12px;
+    }
+
+
+    .wrapper {
+        overflow-y: scroll ;
+    }
+
+    .wrapper ul {
+        width: 100%;
+    }
+
+    .language-content li {
+        display: block;
+    }
+
+    .language-content li button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .language-content {
+        padding-top: 20px;
+        margin-bottom: 126px;
+    }
+
+    .for-resp {
+    flex: 0 0 25%; 
+    max-width: 25%;
+    padding: 2px; 
+    box-sizing: border-box;
+
+}
+
+    .book-img img {
+        margin-bottom: 10px;
+        height: 271px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .lang-drop {
+        position: absolute;
+        top: 10px!important;
+    }
+
+    .copy {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    footer {
+        padding-bottom: 100px;
+    }
+
+    .drop-blue {
+        margin: 10px 0;
+        padding: 10px 0;
+        }
+    
+        .drop-blue .nav-link {
+            padding: 0;
+        }
+
+    .policy-terms {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .mrg-top {
+        margin-top: 20px;
+    }
+
+    .sale-info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .sale-info .info-title {
+        font-weight: 600;
+    }
+
+    .card-area {
+        margin-bottom: 15px;
+    }
+
+    .cards {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .trade-img {
+        margin-top: 10px;
+      }
+
+    .trade-info .begin {
+        width: 100%;
+        text-align: center;
+      }
+
+    .below-pics {
+        background-color: var(--white);
+        margin-top: 20px;
+        padding: 0;
+      }
+
+    .carousel-area {
+        width: 100%;
+        padding: 20px; 
+    }
+
+    .carousel {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .crsl-img {
+        position: relative;
+    }
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+    .carousel-item {
+        text-align: center;
+    }
+
+    .crs-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+
+    .carousel-control-prev {
+        display: none;
+      }
+
+      .carousel-control-next {
+        display: none;
+      }
+    .below-pics .row {
+        flex-wrap: nowrap;
+      }
+
+    .carousel-area {
+        margin-left: 0;
+        width: 100%;
+      }
+
+    .sidebar {
+        display: none;
+    }
+
+
+    .resp-none {
+        display: none;
+    }
+
+    .header-top ul.navbar-nav {
+        display: none;
+    }
+
+    .svg-icon img {
+        display: none;
+    }
+
+
+    .hide-header {
+        display: block;
+      }
+
+      .resp-block {
+        display: block;
+    }
+}
+

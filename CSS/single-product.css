@@ -1,0 +1,332 @@
+.single-product {
+    padding: 30px 0;
+    background-color: var(--white);
+}
+
+.product-img {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #1d32e44f;
+}
+
+.product-img img {
+    border-radius: 15px;
+    position: relative;
+}
+
+.span-vip {
+    display: inline-block;
+    position: absolute;
+    top: 34px;
+    left: 50px;
+    border-radius: 15px;
+    padding: 4px 8px;
+    background-color: #4a6cfa;
+    color: var(--white);
+    font-size: 10px;
+}
+
+.img-fav-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/favorites.2b63a48b7604ad9a4b10.svg);
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    width: 28px;
+    height: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #6969ff66;
+}
+
+.views-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/views.51b33132eb53e4cbaf3a.svg);
+    width: 25px;
+    height: 20px;
+}
+
+.date-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/pr-add-time.45607e38bf1a5516778b.svg);
+    width: 25px;
+    height: 20px;
+}
+
+.top-info span {
+    font-size: 10px;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+.product-title {
+    padding: 20px 0;   
+    border-bottom: 1px solid #8996ae36;
+}
+
+.product-title h2 {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product-title h2:hover {
+    color: #4a6cfa;
+}
+
+.author-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/User.b3d376f4efd73cdee375.svg);
+    margin-right: 3px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.number-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/call.6fbb03144e57b3748e07.svg);
+    margin-right: 3px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mail-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/message.52f23553e538e9c7edd8.svg);
+}
+
+.author-info {
+    padding: 20px 0;
+    border-bottom: 1px solid #8996ae36;
+}
+
+.author-name span{
+    background-color: #80808026;
+    display: inline-block;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: center;
+    padding: 4px 7px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.author-name p {
+    font-size: 11px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.author-name p.grey {
+    color: var(--light-grey);
+}
+
+.author-number {
+    display: flex;
+    align-items: center;
+}
+
+.number-box {
+    font-size: 10px;
+}
+
+.number-box span {
+    display: flex;
+    border: 1px solid #6969ff66;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.number-box span p {
+    margin-left: 10px;
+    margin-top: 13px;
+    font-weight: 100;
+    color: #4a6cfa;
+}
+
+.number-box p{
+    display: inline-block;
+}
+
+.mail-icon {
+    margin-left: 4px;
+    border: 1px solid #8996ae30;
+    padding: 17px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.mail-icon:hover {
+    background-color: #8996ae96;
+}
+
+.product-text {
+    padding: 20px 0;
+}
+
+.product-text p {
+    margin-bottom: 2px;
+    font-size: 11px;
+    color: lightslategray;
+}
+
+.product-text p.bold {
+    font-weight: 600;
+    color: var(--dark);
+}
+
+.product-text a {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 10px;
+    color: #4a6cfa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.price-box2 {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--white);
+    box-shadow: -3px 15px 20px 7px #0000001f;
+}
+
+.price-box2 h5 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.price-box2 p {
+    margin-top: 10px;
+    text-align: center;
+    background-color: #4a6cfa2b;
+    border-radius: 10px;
+    padding: 10px;
+    color: #1313dba6;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.price-box2 p:hover {
+    background-color: #4a6dfa3f;
+}
+
+.single-offer {
+    background-color: var(--white);
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.single-offer .offer-img img {
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.similiar-products {
+    padding: 50px 0;
+}
+
+.similiar-title {
+    margin-bottom: 20px;
+}
+
+.similiar-title h5 {
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.offer-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/user-icon-card.0289954a82ca7a2b4f2f.svg);
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.fav-i {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/favorites.2b63a48b7604ad9a4b10.svg);
+    display: inline-block;
+    margin: 8px;
+}
+
+.fav-icon {
+    float: right;
+    background-color: #80808038;
+    border-radius: 14px;
+    width: 30px;
+    height: 30px;
+    transition: .5s;
+}
+
+.fav-icon:hover {
+    background-color: #fec900;
+}
+
+.offer-content {
+    border-bottom: 1px solid #00000033;
+}
+
+.offer-content span {
+    font-size: 13px;
+    color: var(--light-grey);
+    margin-bottom: 20px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+}
+
+.offer-content p {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.offer-price {
+    padding-top: 10px;
+}
+
+.offer-price .price {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.btn-menu {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/menu.2fb4abdc9f2e9ce566c2.svg);
+    height: 25px;
+    width: 25px;
+}
+
+.crumb-filter {
+    padding-top: 50px;
+    background-color: var(--white);
+}
+
+.crumb-nav {
+    display: flex;
+    position: relative;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+
+.breadcrumb-item  {
+    color: var(--light-grey);
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.breadcrumb-item a {
+    color: var(--light-grey);
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    background-image: url(https://www.mymarket.ge/react/build/static/media/breadcrumbs-icon.0e8fc01e5d18cbb6529f.svg);
+    content: '';
+    padding: 5px 4px;
+    margin: 0 5px;
+}

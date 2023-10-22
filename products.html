@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/products.css">
+    <link rel="stylesheet" href="CSS/header-footer.css">
+
+
+    <title>ახალი და მეორადი ნივთების ყიდვა-გაყიდვის პლატფორმა Mymarket</title>
+
+    <link rel = "icon" href = 
+    "https://www.mymarket.ge/react/build/favicon.ico?v=1" 
+        type = "image/x-icon">
+</head>
+<body>
+
+    <div class="hide-header">
+        <input type="checkbox" id="active">
+        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <div class="wrapper">
+            <h6>მენიუ</h6>
+            <ul class="">
+             <li><a href="#">გახსენი მაღაზია</a></li>
+             <li><a href="#">დახმარება</a></li>
+             <li><a href="#">კონტაქტი</a></li>
+             <li><a href="#">მესიჯის მიწერა</a></li>
+             <li><a href="#">ზარის მოთხოვნა</a></li>
+             <li><a href="#">შეფასება</a></li>
+             <li><a href="#">ფიშინგისგან თავდაცვა</a></li>
+             <li><a href="#">წესები და პირობები</a></li>
+            </ul>
+ 
+            <div class="language-content">
+             <li><button>ქართული</button></li>
+             <li><button>English</button></li>
+             <li><button>Русский</button></li>
+            </div>
+        </div>
+        </div>
+       
+
+
+
+      <header id="scroll-top">
+        <div class="header-top-content">
+            <div class="container">
+                <div class="row">
+                    <div class="header-top col-12 px-md-0  position-relative w-100 d-flex align-items-center justify-content-between bg-white">
+                        <div class="d-flex flex-1 align-items-center">
+                            <div class="logo-content d-flex align-items-center justify-content-between w-100 ">
+                                <a class="logo_ mr-0px mr-sm-28px d-flex align-items-center justify-content-center h-100" href="index.html">
+                                    <i class="svg-i logo-i"></i>
+                                </a>
+                                <div class="resp-none">
+                                    <form class="search-form d-flex border mr-28px border-rgba-blue-gray-30 search-block  position-relative flex-grow-1 w-60 w-md-380px " action="">
+                                        <div class="img-upload"></div>
+                                        <input class="h-100 w-100 border-0 font-size-14 font-medium pr-md-100px pr-36px" placeholder="ძებნა" type="text" name="keyword" id="" autocomplete="off">
+                                        <button class="search-icon position-absolute border-0 rounded-circle align-items-center p-0 d-flex align-items-center justify-content-center" type="submit">
+                                            <i class="svg-i search-i-mobile w-20px h-20px"></i>
+                                        </button>
+                                    </form>
+                                </div>
+
+                        
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav flex-row align-items-center ml-4px m-hidden">
+                            <button class="btn d-flex align-items-center add-statement-btn m-hidden">
+                                <i class="svg-i svg-i-sm add-statement-i mr-8px flex-shrink"></i>
+                                <span class="font-size-12 line-height-13">დამატება</span>
+                            </button>
+                            <div class="mx-8px m-hidden"></div>
+                                <div class="notification-box cursor-pointer mr-8px m-hidden">
+                                    <li class="nav-item d-flex align-items-center dropdown">
+                                        <i class="svg-i svg-i-sm message-i w-24px h-24px "></i>
+                                    </li>
+                                </div>
+                                <li class="nav-item icon d-flex position-relative mr-8px ">
+                                    <a class="favorites-a" href="">
+                                        <i class="svg-i svg-i-sm  favorites-i w-24px h-24px"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item icon cursor-pointer d-flex position-relative dropdown">
+                                    <a class="" href="">
+                                        <i class="svg-i svg-i-sm cart-i w-24px h-24px"></i>
+                                    </a>
+                                </li>
+                                <li class="btn nav-item  d-md-flex align-items-center pl-12px pr-16px border border-radius-sm ml-24px auth-btn ml-24px h-40px">
+                                    <i class="svg-i svg-i-sm auth-i mr-10px"></i>
+                                    <span class="text-dark font-size-14 bg-transparent p-0 text-decoration-none">შესვლა</span>
+                                </li>
+                            
+                        </ul>
+
+                    </div>
+
+                    <div class=" resp-none d-flex justify-content-between w-100 overflow-hidden">
+                        <div class="slider-tabs d-flex align-items-center justify-content-between header-swiper px-0 pb-16px px-16px px-md-0">
+                            <div class="swiper swiper-container swiper-initialized swiper-horizontal swiper-pointer-events flex-1 swiper-backface-hidden">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide max-width-md-170px w-auto mr-32px header-swiper-hover swiper-slide-active" style="width: 69px; margin-right: 20px;">
+                                    <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px" href="">მეორადი განვადებით</a>
+                                </div>
+                                <div class="swiper-slide max-width-md-170px w-auto mr-32px header-swiper-hover swiper-slide-active" style="width: 69px; margin-right: 20px;">
+                                    <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px" href="">Trade In</a>
+                                </div>
+                                <div class="swiper-slide max-width-md-170px w-auto mr-32px header-swiper-hover swiper-slide-active" style="width: 69px; margin-right: 20px;">
+                                    <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px" href="">მაღაზიები</a>
+                                </div>
+                                <div class="swiper-slide max-width-md-170px w-auto mr-32px header-swiper-hover swiper-slide-active" style="width: 69px; margin-right: 20px;">
+                                    <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px" href="">ჩემით წავიღებ</a>
+                                </div>
+                                <div class="swiper-slide max-width-md-170px w-auto mr-32px header-swiper-hover swiper-slide-active" style="width: 69px; margin-right: 20px;">
+                                    <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px" href="">ფასის შეთავაზება</a>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-none d-lg-flex ">
+                            <div class="max-width-md-170px w-auto mr-32px header-swiper-hover">
+                                <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px text-nowrap" href="">
+                                    გახსენი მაღაზია
+                                </a>
+                            </div>
+                            <div class="max-width-md-170px w-auto mr-32px header-swiper-hover">
+                                <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px text-nowrap" href="">
+                                    დახმარება
+                                </a>
+                            </div>
+                            <div class="max-width-md-170px w-auto mr-32px header-swiper-hover">
+                                <a class="text-decoration-none cursor-pointer font-base text-dark font-size-14 d-flex py-8px text-nowrap" href="">
+                                    კონტაქტი
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex position-fixed z-index-999 bottom-0 left-0 right-0 bg-white px-16px shadow h-70px align-items-center justify-content-between overflow-hidden d-lg-none">
+            <a class="cursor-pointer d-flex flex-column align-items-center no-underline bottom-bar w-76px active" href="index.html">
+                <div class="w-basis-24 h-24px max-height-24px d-flex align-items-center justify-content-center mb-6px ">
+                    <i class="svg-i w-24px h-24px active-home-i d-flex"></i>
+                </div>
+                <div class="text-dark font-size-10">მთავარი</div>
+            </a>
+
+            <a class="cursor-pointer d-flex flex-column align-items-center no-underline bottom-bar w-76px" href="products.html">
+                <div class="w-basis-24 h-24px max-height-24px d-flex align-items-center justify-content-center mb-6px ">
+                    <i class="svg-i w-24px h-24px category-icon-i d-flex"></i>
+                </div>
+                <div class="text-dark font-size-10">კატეგორიები</div>
+            </a>
+
+            <a class="cursor-pointer d-flex flex-column align-items-center no-underline bottom-bar w-76px" href="index.html">
+                <div class="w-basis-24 h-24px max-height-24px d-flex align-items-center justify-content-center mb-6px ">
+                    <i class="svg-i w-24px h-24px add-icon-i d-flex"></i>
+                </div>
+                <div class="text-dark font-size-10">დამატება</div>
+            </a>
+
+            <a class="cursor-pointer d-flex flex-column align-items-center no-underline bottom-bar w-76px" href="index.html">
+                <div class="w-basis-24 h-24px max-height-24px d-flex align-items-center justify-content-center mb-6px ">
+                    <i class="svg-i w-24px h-24px cart-icon-i d-flex"></i>
+                </div>
+                <div class="text-dark font-size-10">რჩეულები</div>
+            </a>
+
+            <a class="cursor-pointer d-flex flex-column align-items-center no-underline bottom-bar w-76px" href="index.html">
+                <div class="w-basis-24 h-24px max-height-24px d-flex align-items-center justify-content-center mb-6px ">
+                    <i class="svg-i svg-i-xlg user-male-i"></i>
+                </div>
+                <div class="text-dark font-size-10">პროფილი</div>
+            </a>
+        </div>
+
+      </header>
+
+
+
+<section class="crumb-filter">
+    <div class="container">
+        <nav class="crumb-nav" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">მთავარი</a></li>
+              <li class="breadcrumb-item active" aria-current="page">მომსახურება</li>
+            </ol>
+            <a href="#" class="article-numb">3606 განცხადება</a>
+         
+          <div class="filter-box">
+            <form action="#" class="select-area">
+                <select class="form-control" name="" id="">
+                    <option value="#">თარიღი კლებადი</option>
+                    <option value="#">თარიღი ზრდადი</option>
+                    <option value="#">ფასი კლებადი</option>
+                    <option value="#">ფასი ზრდადი</option>
+                    <option value="#">ნახვები ზრდადი</option>
+                    <option value="#">ნახვები კლებადი</option>
+                    <option value="#">ფასდაკლებები</option>
+                </select>
+            </form>
+          </div>
+         </nav>
+    </div>
+</section>
+
+
+<section class="search-help">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="filter-area">
+                    <div class="filter-header">
+                        <h5>ფილტრები</h5>
+                    </div>
+                    
+                    <div class="filter-content">
+                        <div class="content-header">
+                            <a href="">მომსახურება</a>
+                            </div>
+                            <ul class="filter-list">
+                                <li><a href="singleProduct.html">ავტომობულის აუდიო-ვიდეო სისტემების მონტაჟი, შეკეთება</a></li>
+                                <li><a href="singleProduct.html">აუდიო, ვიდეო, ფოტო მომსახურება</a></li>
+                                <li><a href="singleProduct.html">აუდიტი, ბუღალტერია</a></li>
+                                <li><a href="singleProduct.html">ბეჭდვა, პოლიგრაფია</a></li>
+                                <li><a href="singleProduct.html">მთარგმნელობითი</a></li>
+                                <li><a href="singleProduct.html">მობილური ტელეფონების სერვისი</a></li>
+                                <li><a href="singleProduct.html">სარიტუალო მომსახურება</a></li>
+                                <li><a href="singleProduct.html">ცეცხლსასროლი იარაღების შეკეთება</a></li>
+                                <li><a href="singleProduct.html">ველოსიპედის/ჰოვერბორდის შეკეთება</a></li>
+                                <li><a href="singleProduct.html">მეტალოდეტექტორის მომსახურება</a></li>
+                                <li><a href="singleProduct.html">მინისა და სარკის ნაკეთობების დამზადება</a></li>
+                                <li><a href="singleProduct.html">საპროექტო მომსახურება</a></li>
+                                <li><a href="singleProduct.html">სასოფლო-სამეურნეო მომსახურება</a></li>
+                                <li><a href="singleProduct.html">სპორტული ინვენტარის შეკეთება</a></li>
+                                <li><a href="singleProduct.html">უსაფრთხოების სისტემის შეკეთება/მონტაჟი</a></li>
+                                <li><a href="singleProduct.html">წყალქვეშა სამუშაოები</a></li>
+                                <li><a href="singleProduct.html">ჰიდროგეოლოგიური მომსახურება</a></li>
+                                <li><a href="singleProduct.html">ავეჯის დამზადება და რესტავრაცია</a></li>
+                                <li><a href="singleProduct.html">მუსიკალური აპარატურის აწყობა, შეკეთება</a></li>
+                                <li><a href="singleProduct.html">საიუველირო მომსახურება</a></li>
+                                <li><a href="singleProduct.html">ტურიზმი, ვიზები</a></li>
+                                <li><a href="singleProduct.html">იურიდიული მომსახურება</a></li>
+                                <li><a href="singleProduct.html">კომპიუტერული მომსახურება</a></li>
+                                <li><a href="singleProduct.html">სატრანსპორტო ლოგისტიკა</a></li>
+                                <li><a href="singleProduct.html">ცხოველთა სამყარო</a></li>
+                                <li><a href="singleProduct.html">საყოფაცხოვრებო, კომუნალური მომსახურება</a></li>
+                                <li><a href="singleProduct.html">რეკლამა, მარკეტინგი, PR</a></li>
+                                <li><a href="singleProduct.html">სადღესასწაულო</a></li>
+                                <li><a href="singleProduct.html">განათლება</a></li>
+                                <li><a href="singleProduct.html">მედიცინა, ჯანმრთელობა, სილამაზე</a></li>
+                            </ul>
+
+                            <div class="filter-box-2">
+                                <h5>მდებარეობა</h5>
+                                <form action="#" class="select-area">
+                                    <select class="form-control" name="" id="">
+                                        <option value="#">თბილისი</option>
+                                        <option value="#">აბაშა</option>
+                                        <option value="#">ამბროლაური</option>
+                                        <option value="#">ახალციხე</option>
+                                        <option value="#">ბათუმი</option>
+                                        <option value="#">ბოლნისი</option>
+                                        <option value="#">ბორჯომი</option>
+                                        <option value="#">გორი</option>
+                                        <option value="#">გარდაბანი</option>
+                                        <option value="#">თელავი</option>
+                                        <option value="#">ქუთაისი</option>
+                                        <option value="#">დედოფლისწყარო</option>
+                                        <option value="#">დმანისი</option>
+                                        <option value="#">ზუგდიდი</option>
+                                    </select>
+                                </form>
+                              </div>
+
+                              <form class="categories" action="">
+                              <div class="radio-filter">
+                                <div class="radio-header">
+                                    <h6>ონლაინ ყიდვა</h6>
+                                </div>
+                                <div class="radio-input">
+                                    <div class="d-flex align-items-center">
+                                        <input checked class="input" type="radio" name="radios" id="radio1">
+                                        <label for="radio1">ყველა</label>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input class="input" type="radio" name="radios" id="radio2">
+                                        <label for="radio2">დიახ</label>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input class="input" type="radio" name="radios" id="radio3">
+                                        <label for="radio3">არა</label>
+                                    </div>
+                                </div>
+                                
+                              </div>
+
+                              <div class="radio-filter">
+                                <div class="radio-header">
+                                    <h6>განვადებით სარგებლობა</h6>
+                                </div>
+                                <div class="radio-input2">
+                                    <div class="d-flex align-items-center">
+                                        <input checked class="input" type="radio" name="1" id="1">
+                                        <label for="1">ყველა</label>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input class="input" type="radio" name="1" id="2">
+                                        <label for="2">დიახ</label>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <input class="input" type="radio" name="1" id="3">
+                                        <label for="3">არა</label>
+                                    </div>
+                                </div>
+                              </div>
+
+                              <div class="price-input">
+                                <div class="radio-header">
+                                    <h6>ფასი</h6>
+                                </div>
+                                <div class="d-flex price-box">
+                                        <div class="from-to">
+                                            <input type="text" placeholder="დან">
+                                        </div>
+                                        <div class="from-to">
+                                            <input type="text" placeholder="მდე">
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                <div class="object">
+                                    <div class="radio-header">
+                                        <h6>ნივთის მდგომარეობა</h6>
+                                    </div>
+                                    <div class="check-inputs">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">მეორადი</label>
+                                </div>
+                                <div class="check-inputs">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">ახალი</label>
+                                </div>
+                                <div class="check-inputs">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">ახალივით</label>
+                                </div>
+                                <div class="check-inputs">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">ნაწილებად</label>
+                                </div>
+                                <div class="check-inputs">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">Outlet</label>
+                                </div>
+                                </div>
+
+                                <div class="radio-filter">
+                                    <div class="radio-header">
+                                        <h6>განცხადების ტიპი</h6>
+                                    </div>
+                                    <div class="radio-input3">
+                                        <div class="d-flex align-items-center">
+                                            <input checked class="input" type="radio" name="2" id="r1">
+                                            <label for="r1">ყველა</label>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <input class="input" type="radio" name="2" id="r2">
+                                            <label for="r2">კერძო</label>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <input class="input" type="radio" name="2" id="r3">
+                                            <label for="r3">მაღაზია</label>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <input class="input" type="radio" name="2" id="r4">
+                                            <label for="r4">შევიძენ</label>
+                                        </div><div class="d-flex align-items-center">
+                                            <input class="input" type="radio" name="2" id="r5">
+                                            <label for="r5">ფასდაკლება</label>
+                                        </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="object">
+                                    <div class="radio-header">
+                                        <h6>შშმპ ადაპტირებული</h6>
+                                    </div>
+                                    <div class="check-inputs">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">დიახ</label>
+                                </div>
+                                  </div>
+
+                                  <div class="object">
+                                    <div class="radio-header">
+                                        <h6>პრომოუშენი</h6>
+                                    </div>
+                                    <div class="check-inputs">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">SUPER VIP</label>
+                                </div>
+                                <div class="check-inputs">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">VIP +</label>
+                                </div>
+                                <div class="check-inputs">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">VIP</label>
+                                </div>
+                                <div class="check-inputs">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">ფერი</label>
+                                </div>
+                                  </div>
+
+                                  
+
+                            </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-6.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                        <span class="svg-i person-i"></span>
+                        <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">Adobe Audition -ის ინსტალაცია</a></h6>
+                        <p>დაგიინსტალირებთ აუდიო პროგრამა Adobe Audition -ს კრეკით. ინსტალაციის შემდეგ მოგაწვდით ვიდეო გაკვეთილს რითიც თავად ვსწავლობდი.</p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-2.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">ლაზერული და ჭავლური კარტრიჯების დამუხტვა</a></h6>
+                        <p>შპს "კომპსერვისი" 1998 წლიდან ემსახურება როგორც კერძო პირებს ასევე ორგანიზაციებსა და კომპანიებს (ერთჯერადათ და შეღავათიან სახელშეკრულებო პირობებით)
+
+                            ნებისმიერი საგადასახადო საბუთის და ანგარიშფაქტურის გამოწერით ნაღდი და უნაღდო ანგარიშსწორებით გთავაზობთ:
+                            
+                            * კარტრიჯების დამუხტვა/აღდგენას (ლაზერულის დამუხტვა 20 ლარი, ჭავლურის დამუხტვა შავი - 15 ლარი, სამფეროვანი ფერადის - 20 ლარი);</p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/29449140_1.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">☑️ ვებგვერდების დამზადება / საიტების დამზადება</a></h6>
+                        <p>ჩვენთან ნებისმიერი სახის ვებ საიტის დამზადება არის
+
+                            შესაძლებელი.
+                            ამისთვის საჭიროა დაგვიკავშირდეთ და შევათანხმოთ თქვენთვის სასურველი ვებ საიტის დამზადების დეტალები.
+                            
+                            წარმოგიდგენთ ხშირად მოთხოვნად საიტების ტიპებს:
+                            
+                            ონლაინ მაღაზია
+                            პროდუქციის ონლაინ კატალოგი</p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-3.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">ნახატი</a></h6>
+                        <p>მოგემსახურებით ავეჯის და ტვირთების გადაზიდვაში როგორც თბილისში ისე მთელი საქართველოს მასშტაბით შეღავათიან ფასებში.გვყავს გამოცდილი მძღოლები და მუშებიც საჭიროების შემთხვევაში. გვაქვს გადაზიდვების სფეროში მრავალწლიანი გამოცდილება. მოგემსახურებით თქვენთვის მაქსიმალურად კომფორტულად და ხარისხიანად.</p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-4.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">მელანი hp 1 litr.</a></h6>
+                        <p>
+                            HP მელნები, 1ლიტრიანი დაფასოება. 500მგ, უმაღლესი ხარისხი
+                        </p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-5.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">IT სერვისი</a></h6>
+                        <p>კომპიუტერული სერვისი გამოძახებით
+
+                            პერსონალურ კომპიუტერზე, ნოუთბუკზე, ნეთბუკზე, მონობლოკზე
+                            
+                            windows 7 windows 8.1 windows 10 windows 11 ინსტალაცია ინგლისურ რუსულ ქართულ ენაზე
+                            
+                            ერთრანგიანი ლოკალური ქსელის შექმნა რამოდენიმე კომპიუტერის ერთმანეთთან დაკავშირება
+                            
+                            იუზერების უფლებების დელეგირება ლოკალურ ქსელში
+                            
+                            </p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-1.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">ინფორმაციის აღდგენა</a></h6>
+                        <p>დაზიანებული ვინჩესტერებიდან და ნებისმიერი სხვა ინფორმაციის მატარებლიდან ინფორმაციის აღდგენა .
+                            ასევე ნებისმიერი კომპიუტერული ტექნიკის შეკეთება, სისტემური გამართვა, გაძლიერება, განახლება.</p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-7.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">ვიდეო რედაქტორი Adobe Premiere Pro -ს ინსტალაცია</a></h6>
+                        <p>ერთ-ერთი ყველაზე ცნობილი პროგრამის Adobe Premiere Pro -ს ინსტალაცია კრეკით. ინსტალაციის შემდგომ მოგაწვდით ვიდეო გაკვეთილებს რომლითაც თავად ვსწავლობდი</p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-6.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">Adobe Audition -ის ინსტალაცია</a></h6>
+                        <p>დაგიინსტალირებთ აუდიო პროგრამა Adobe Audition -ს კრეკით. ინსტალაციის შემდეგ მოგაწვდით ვიდეო გაკვეთილს რითიც თავად ვსწავლობდი.</p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-2.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">ლაზერული და ჭავლური კარტრიჯების დამუხტვა</a></h6>
+                        <p>შპს "კომპსერვისი" 1998 წლიდან ემსახურება როგორც კერძო პირებს ასევე ორგანიზაციებსა და კომპანიებს (ერთჯერადათ და შეღავათიან სახელშეკრულებო პირობებით)
+
+                            ნებისმიერი საგადასახადო საბუთის და ანგარიშფაქტურის გამოწერით ნაღდი და უნაღდო ანგარიშსწორებით გთავაზობთ:
+                            
+                            * კარტრიჯების დამუხტვა/აღდგენას (ლაზერულის დამუხტვა 20 ლარი, ჭავლურის დამუხტვა შავი - 15 ლარი, სამფეროვანი ფერადის - 20 ლარი);</p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/29449140_1.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">☑️ ვებგვერდების დამზადება / საიტების დამზადება</a></h6>
+                        <p>ჩვენთან ნებისმიერი სახის ვებ საიტის დამზადება არის
+
+                            შესაძლებელი.
+                            ამისთვის საჭიროა დაგვიკავშირდეთ და შევათანხმოთ თქვენთვის სასურველი ვებ საიტის დამზადების დეტალები.
+                            
+                            წარმოგიდგენთ ხშირად მოთხოვნად საიტების ტიპებს:
+                            
+                            ონლაინ მაღაზია
+                            პროდუქციის ონლაინ კატალოგი</p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-3.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">ნახატი</a></h6>
+                        <p>მოგემსახურებით ავეჯის და ტვირთების გადაზიდვაში როგორც თბილისში ისე მთელი საქართველოს მასშტაბით შეღავათიან ფასებში.გვყავს გამოცდილი მძღოლები და მუშებიც საჭიროების შემთხვევაში. გვაქვს გადაზიდვების სფეროში მრავალწლიანი გამოცდილება. მოგემსახურებით თქვენთვის მაქსიმალურად კომფორტულად და ხარისხიანად.</p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-4.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">მელანი hp 1 litr.</a></h6>
+                        <p>
+                            HP მელნები, 1ლიტრიანი დაფასოება. 500მგ, უმაღლესი ხარისხი
+                        </p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="products">
+                    
+                    <div class="product-image">
+                        <a class="link-parent" href="singleProduct.html">
+                        <img src="images/prod-5.jpg" alt="">
+                        </a>
+                        <span class="prod-vip">S-VIP</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="d-flex">
+                            <span class="svg-i person-i"></span>
+                            <span class="person">ფიზიკური პირი</span></div>
+                        <h6><a href="">IT სერვისი</a></h6>
+                        <p>კომპიუტერული სერვისი გამოძახებით
+
+                            პერსონალურ კომპიუტერზე, ნოუთბუკზე, ნეთბუკზე, მონობლოკზე
+                            
+                            windows 7 windows 8.1 windows 10 windows 11 ინსტალაცია ინგლისურ რუსულ ქართულ ენაზე
+                            
+                            ერთრანგიანი ლოკალური ქსელის შექმნა რამოდენიმე კომპიუტერის ერთმანეთთან დაკავშირება
+                            
+                            იუზერების უფლებების დელეგირება ლოკალურ ქსელში
+                            
+                            </p>
+                    </div>
+                    <div class="price-info">
+                        <h6>ფასი შეთანხმებით</h6>
+                        <button class="favorites">
+                            <i class="svg-i favorites-i"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                      <li class="page-item"><a class="page-link" href="#">52</a></li>
+                      <li class="page-item"><a class="page-link" href="#">53</a></li>
+                      <li class="page-item"><a class="page-link" href="#">54</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <a class="scrollup" href="#scroll-top"><div class="scroll-top d-flex align-items-center justify-content-center bg-market-color cursor-pointer p-15px mb-32px mb-md-40px">
+      <span class="svg-i scroll-top-i"></span>
+   </div></a>
+   <div class="cards">
+       <div class="card-area">
+           <span class="svg-i google-i"></span>
+           <span class="svg-i apple-i"></span>
+       </div>
+       <div class="card-info">
+           <p>გადმოწერე აპლიკაცია და მიიღე მუდმივად განახლებული ინფორმაცია მარტივად</p>
+       </div>
+   </div>
+
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-6">
+               <div class="row">
+                   <div class="col-lg-6">
+           <div class="single-footer-menu">
+               <div class="menu-title">
+                   <p>ნავიგაცია</p>
+               </div>
+               <ul class="footer-menu">
+                   <li><a href="#">განცხადების დამატება</a></li>
+                   <li><a href="#">იყიდე ონლაინ</a></li>
+                   <li><a href="#">მეორადი ნივთები</a></li>
+                   <li><a href="#">ყიდვის ფორმა საკურიეროს დახმარებით</a></li>
+                   <li><a href="#">ფიშინგისგან თავდაცვა</a></li>
+                   <li><a href="#">მაღაზიები</a></li>
+                   <li><a href="#">გახსენი მაღაზია</a></li>
+                   <li><a href="#">Trade In</a></li>
+               </ul>
+           </div>
+       </div>
+
+       <div class="col-lg-6">
+           <div class="single-footer-menu">
+               <div class="menu-title">
+                   <p>დახმარება</p>
+               </div>
+               <ul class="footer-menu">
+                   <li><a href="#">ხშირად დასმული კითხვები</a></li>
+                   <li><a href="#">კონტაქტი</a></li>
+                   <li><a href="#">მეორადი ნივთები</a></li>
+                   <li><a href="#">info@mymarket.ge</a></li>
+               </ul>
+               <ul class="social">
+                   <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                   <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                   <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+               </ul>
+           </div>
+       </div>
+           
+       </div>
+       </div>
+
+       <div class="col-lg-6">
+           <div class="row">
+               <div class="col-lg-4">
+           <div class="single-footer-menu">
+               <div class="menu-title">
+                   <p>კატეგორიები</p>
+               </div>
+               <ul class="footer-menu">
+                   <li><a href="#">მომსახურება</a></li>
+                   <li><a href="#">გაქირავება</a></li>
+                   <li><a href="#">მეორადი ნივთები</a></li>
+                   <li><a href="#">სახლი და ბაღის</a></li>
+                   <li><a href="#">საოჯახო ტექნიკა</a></li>
+                   <li><a href="#">ტექნიკა</a></li>
+                   <li><a href="#">ნადირობა და თევზაობა</a></li>
+                  
+               </ul>
+           </div>
+       </div>
+
+
+       <div class="col-lg-4">
+           <div class="single-footer-menu mrg-top">
+               
+               <ul class="footer-menu">
+                   <li><a href="#">მუსიკა</a></li>
+                   <li><a href="#">საბავშვო</a></li>
+                   <li><a href="#">სილამაზე და მოდა</a></li>
+                   <li><a href="#">მშენებლობა და რემონტი</a></li>
+                   <li><a href="#">სოფლის მეუნეობა</a></li>
+                   <li><a href="#">ცხოველები</a></li>
+                   
+               </ul>
+           </div>
+       </div>
+
+
+       <div class="col-lg-4">
+           <div class="single-footer-menu mrg-top">
+               
+               <ul class="footer-menu">
+                   <li><a href="#">სპორტი და დასვენება</a></li>
+                   <li><a href="#">ბიზნესი და დანადგარები</a></li>
+                   <li><a href="#">წიგნები და კანცელარია</a></li>
+                   <li><a href="#">ხელოვნება და საკოლექციო</a></li>
+                   
+               </ul>
+           </div>
+       </div>
+
+       </div>
+       </div>
+
+   </div>
+</div>
+
+<div class="line">
+</div>
+
+<div class="container">
+   <div class="policy-terms">
+       <div class="single-term">
+           <a href="#">წესები და პირობები</a>
+       </div>
+
+       <div class="single-term">
+           <a href="#">კონფიდენციალობის პოლიტიკა</a>
+       </div>
+
+       <div class="single-term">
+           <a href="#">დაბრუნების პოლიტიკა</a>
+       </div>
+
+       <div class="nav-item dropdown drop-i drop-blue">
+           <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <span class="drop-title">
+               <i class="fa-solid fa-globe"></i>
+           ქართული</span>
+           </a>
+           <div class="lang-drop dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <span class="flag">
+                   <img src="images/geo.png" alt="">
+               </span>
+               <a class="dropdown-item" href="#">ქართული</a>
+             <span class="flag">
+               <img src="images/eng.png" alt="">
+             </span>
+               <a class="dropdown-item" href="#">ინგლისური</a>
+             <span class="flag">
+               <img src="images/rus.png" alt="">
+             </span>
+             <a class="dropdown-item" href="#">რუსული</a>
+             
+           </div>
+   </div>
+   </div>
+
+   <div class="tnet-partners">
+       
+       <div class="partner-img">
+           <div class="row">
+           <div class="col-lg-2">
+           <div class="tnet-logo2">
+               <img src="images/tnet-logo.png" alt="">
+           </div>
+       </div>
+       
+               <div class="col-lg-1 col-4">
+               <span class="svg-i auto-i"></span>
+               </div>
+               <div class="col-lg-1 col-4">
+               <span class="svg-i part-i"></span>
+               </div>
+               <div class="col-lg-1 col-4">
+               <span class="svg-i home-i"></span>
+               </div>
+               <div class="col-lg-1 col-4">
+               <span class="svg-i market-i"></span>
+               </div>
+               <div class="col-lg-1 col-4">
+               <span class="svg-i super-i"></span>
+               </div>
+               <div class="col-lg-1 col-4">
+               <span class="svg-i shop-i"></span>
+               </div>
+               <div class="col-lg-1 col-4">
+               <span class="svg-i vendo-i"></span>
+               </div>
+               <div class="col-lg-1 col-4">
+               <span class="svg-i tkt-i"></span>
+               </div>
+               <div class="col-lg-1 col-4">
+               <span class="svg-i swoop-i"></span>
+               </div>
+               <div class="col-lg-1 col-4">
+               <span class="svg-i livo-i"></span>
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <div class="copy">
+       <div class="pp">
+           <p>This site is protected by reCAPTCHA and the Google
+               <a href="#">Privacy Policy</a>
+               and
+               <a href="#">Terms of service</a>
+               apply
+           </p>
+       </div>
+       <div class="rights">
+           <p>&copy; 2023 ყველა უფლება დაცულია</p>
+       </div>
+   </div>
+
+</div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+   <script src="javascript/mine.js"></script>
+
+</body>
+</html>
